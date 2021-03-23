@@ -8,6 +8,7 @@
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "editor.formatOnType": true,
+  "editor.tabSize": 2,
   "editor.quickSuggestions": {
     "strings": true
   },

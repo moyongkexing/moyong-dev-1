@@ -13,16 +13,16 @@ const HomeContent: VFC<Props> = (props) => {
   const { linkProps, imgProps, name } = props;
 
   return (
-    <div className="w-44 h-44 bg-blue-200 flex justify-center items-center m-5">
-      <Link {...linkProps}>
+    <Link {...linkProps}>
+      <div className="w-44 h-44 bg-blue-200 flex justify-center items-center m-5 cursor-pointer">
         <a>
           <div>
             <Image {...imgProps} alt="コンテンツの画像" />
           </div>
           {/* <span>{name}</span> */}
         </a>
-      </Link>
-    </div>
+      </div>
+    </Link>
   );
 };
 export default HomeContent;

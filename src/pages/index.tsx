@@ -1,6 +1,6 @@
 import type { VFC } from "react";
 import Image from "next/image";
-import { Footer } from "src/components/Footer";
+import Footer from "src/components/Footer";
 import HomeContent from "src/components/HomeContent";
 import SnsIconButton from "src/components/SnsIconButton";
 import SnsIconTypes from "../enums/SnsIconTypes";

@@ -3,13 +3,15 @@ import type { VFC } from "react";
 
 const items = [
   { href: "/", label: "Home" },
-  { href: "/about", label: "About" },
+  { href: "/profile", label: "Profile" },
+  { href: "/works", label: "Works" },
+  { href: "/Contact", label: "Contact" },
 ];
 
-export const Header: VFC = () => {
+const Header: VFC = () => {
   return (
-    <header>
-      <h1>Title</h1>
+    <header className="w-full px-5 flex items-center justify-between border-b border-gray-300 xl:px-20">
+      <h1 className="text-black text-2xl font-bold tracking-wide capitalize">moyong-dev</h1>
       <nav>
         {items.map(({ href, label }) => {
           return (
@@ -22,3 +24,4 @@ export const Header: VFC = () => {
     </header>
   );
 };
+export default Header;

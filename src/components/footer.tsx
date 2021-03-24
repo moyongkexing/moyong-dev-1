@@ -1,7 +1,7 @@
 import type { VFC } from "react";
 import Link from "next/link";
 
-export const Footer: VFC = () => {
+const Footer: VFC = () => {
   return (
     <footer className="flex flex-col items-center text-sm p-4">
       <ul className="flex flex-col items-center w-full justify-between sm:flex-row">
@@ -22,3 +22,4 @@ export const Footer: VFC = () => {
     </footer>
   );
 };
+export default Footer;

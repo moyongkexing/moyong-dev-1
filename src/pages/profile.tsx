@@ -1,7 +1,13 @@
 import type { VFC } from "react";
-import { Layout } from "src/components/layout";
-
+import Image from "next/image";
+import { Layout } from "src/components/Layout";
 const Profile: VFC = () => {
-  return <Layout>profile page</Layout>;
+  return (
+    <Layout>
+      <div className="flex justify-center">
+        <Image></Image>
+      </div>
+    </Layout>
+  )
 };
 export default Profile;

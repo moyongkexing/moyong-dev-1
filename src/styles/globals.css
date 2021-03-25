@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 html {
-  background-color: hsl(195, 62%, 94%);
+  /* background-color: #e6d2d0; */
+  background-color: #f3e5e3;
   box-sizing: border-box;
 }

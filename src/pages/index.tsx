@@ -10,17 +10,17 @@ const homeContentItem = [
   {
     name: "Profile",
     href: "/profile",
-    src: "/resume.png",
+    src: "/resume2.png",
   },
   {
     name: "Works",
     href: "/works",
-    src: "/laptop.png",
+    src: "/laptop2.png",
   },
   {
     name: "Contact",
     href: "/contact",
-    src: "/postbox.png",
+    src: "/mail.png",
   },
 ];
 const snsIcon = [

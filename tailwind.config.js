@@ -5,9 +5,10 @@ module.exports = {
     extend: {
       colors: {
         black: "#0e0e0e",
-        wrapper: "#fffff8",
         twitter: "#1da1f2",
         qiita: "#5bba0b",
+        tag: "#454b72",
+        appBg: "#f3e5e3",
       },
     },
   },

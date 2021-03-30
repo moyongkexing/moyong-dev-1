@@ -1,0 +1,27 @@
+.profile {
+	padding: 30px;
+	position: relative;
+}
+
+.profile::before, .profile::after {
+	content: '';
+	width: 15px;
+	height: 100%;
+	position: absolute;
+}
+
+.profile::before {
+	border-left: solid 4px #000000;
+	border-top: solid 4px #000000;
+	border-bottom: solid 4px #000000;
+	top: 0;
+	left: 0;
+}
+
+.profile::after {
+	border-right: solid 4px #000000;
+	border-top: solid 4px #000000;
+	border-bottom: solid 4px #000000;
+	top: 0;
+	right: 0;
+}

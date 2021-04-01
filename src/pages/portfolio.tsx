@@ -30,7 +30,7 @@ const PORTFOLIO_ITEMS = [
     created_at: "2020/12",
     tags: [TechnologyTypes.html, TechnologyTypes.css, TechnologyTypes.javascript, TechnologyTypes.vercel],
     text: [
-      "HTML、CSS、JavaScriptだけで作成した自己紹介用ホームページです。",
+      "HTML、CSS、JavaScriptだけで作成した自己紹介用ホームページ。",
       "YouTubeに転がっているHTML/CSSデザイン講座をひたすら写経していた時期があり、そのアウトプットとして作成しました。",
       "ホスティングはVercelを利用しています。",
     ],
@@ -48,11 +48,11 @@ const PORTFOLIO_ITEMS = [
       TechnologyTypes.heroku,
     ],
     text: [
-      "自宅で勉強する人のためのコミュニティサイトのようなものを意識して作りました。",
+      "自宅で勉強する人のためのコミュニティサイト。",
       "Twitterのようなつぶやき、いいね、フォロー、ユーザー編集などが行えます。",
       "勉強開始にあわせて「勉強を開始」ボタンを押して頂きますと、「勉強している人一覧」ページにあなたの名前が表示されます。",
-      "勉強中、他の人から「エール」をもらったり、送ったりすることができます。",
-      "勉強にかけた時間を計測＆記録する機能もあります。",
+      "勉強中、他の人から「エール」をもらったり、送ったりすることもできます。",
+      "RSpecによるテストを頑張りました。",
     ],
   },
 ]

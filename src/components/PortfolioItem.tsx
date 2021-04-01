@@ -5,37 +5,35 @@ import ScheduleIcon from "@material-ui/icons/Schedule";
 import TechnologyTypes from "src/enums/TechnologyTypes";
 
 interface PROPS {
-  description: {
-    href: string,
-    src: string,
-    name: string,
-    created_at: string,
-    tags: TechnologyTypes[],
-    text: string[],
-  };
+  href: string,
+  src: string,
+  name: string,
+  created_at: string,
+  tags: TechnologyTypes[],
+  text: string[],
 }
 const PortfolioItem: VFC<PROPS> = (props) => {
-  const { description } = props;
+  const { href, src, name, created_at, tags, text } = props;
   return (
-    <div className="flex w-11/12 py-5 px-10 border shadow-md">
+    <div className="flex w-11/12 my-5 py-5 px-10 border shadow-md">
       <div className="w-2/5 m-5">
-        <a href={description.href}>
-          <Image src={description.src} width={450} height={300} />
+        <a href={href}>
+          <Image src={src} width={450} height={270} />
         </a>
       </div>
-      <div className="w-3/5 m-5">
-        <h1 className="my-3 text-2xl font-bold">{description.name}</h1>
+      <div className="w-3/5">
+        <h1 className="my-3 text-2xl font-bold">{name}</h1>
         <p className="my-3 text-sm ">
           <ScheduleIcon className="text-sm mx-1" />
-          {description.created_at}
+          {created_at}
         </p>
         <div className="flex my-3">
-          {description.tags.map((tag) => (
+          {tags.map((tag) => (
             <Tags name={tag} />
           ))}
         </div>
-        {description.text.map((row) => (
-          <p className="">{row}</p>
+        {text.map((row) => (
+          <p className="my-1">{row}</p>
         ))}
       </div>
     </div>

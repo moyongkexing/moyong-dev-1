@@ -7,7 +7,7 @@ import SnsIconButton from "src/components/SnsIconButton";
 import SnsIconTypes from "../enums/SnsTypes";
 import styles from "../styles/hover.module.css";
 
-const homeContentItem = [
+const HOME_CONTENT_ITEM = [
   {
     name: "Profile",
     href: "/profile",
@@ -24,7 +24,7 @@ const homeContentItem = [
     src: "/mail.png",
   },
 ];
-const snsIcon = [
+const SNS_ICON = [
   {
     name: SnsIconTypes.twitter,
     href: "https://twitter.com/mo4g_dev",
@@ -41,8 +41,8 @@ const snsIcon = [
     label: "qiitaのリンク",
   },
 ];
-const siteNameLiteral = Array.from("MO4g-DEV");
-const myNameLiteral = Array.from("Katsuyuki_Suenaga");
+const SITE_NAME_LITERAL = Array.from("MO4g-DEV");
+const MY_NAME_LITERAL = Array.from("Katsuyuki_Suenaga");
 
 const Home: VFC = () => {
   return (
@@ -52,7 +52,7 @@ const Home: VFC = () => {
       </Head>
       <div className="bg-white w-full flex flex-col justify-center items-center shadow-xl border-2 border-gray-300 md:w-11/12 xl:w-10/12">
         <p className="mt-10 mb-5 text-black text-4xl font-bold tracking-wide cursor-pointer lg:text-5xl">
-          {siteNameLiteral.map((t, index) => (
+          {SITE_NAME_LITERAL.map((t, index) => (
             <span key={index} className={styles.hvrGrow}>
               {t}
             </span>
@@ -60,7 +60,7 @@ const Home: VFC = () => {
         </p>
 
         <div className="w-full pb-5 flex flex-col items-center sm:flex-row sm:pb-10 sm:justify-center border-b border-gray-300">
-          {homeContentItem.map((item) => (
+          {HOME_CONTENT_ITEM.map((item) => (
             <HomeContent
               key={item.name}
               linkProps={{ href: item.href }}
@@ -79,7 +79,7 @@ const Home: VFC = () => {
           <div className="my-4 md:border-r border-gray-300 sm:w-7/12">
             <div className="flex flex-col items-center">
               <p className="text-3xl text-black font-bold mt-1 md:text-4xl lg:text-5xl tracking-wider">
-                {myNameLiteral.map((t, index) => (
+                {MY_NAME_LITERAL.map((t, index) => (
                   <span key={index} className={styles.hvrGrow}>
                     {t}
                   </span>
@@ -88,7 +88,7 @@ const Home: VFC = () => {
               <p className="text-2xl text-black font-bold mt-1 md:text-3xl">college student</p>
             </div>
             <div className="flex justify-center my-2 sm:my-4">
-              {snsIcon.map((sns) => (
+              {SNS_ICON.map((sns) => (
                 <SnsIconButton key={sns.name} sns={sns.name} href={sns.href} ariaLabel={sns.label} />
               ))}
             </div>

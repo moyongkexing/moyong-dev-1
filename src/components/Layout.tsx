@@ -4,9 +4,9 @@ import Header from "src/components/Header";
 
 const Layout: VFC<{ children: ReactNode }> = (props) => {
   return (
-    <div className="bg-white w-full flex flex-col justify-center items-center shadow-xl border-2 border-gray-300 md:w-11/12 xl:w-10/12">
+    <div className="bg-white my-10 w-full flex flex-col justify-center items-center shadow-xl border-2 border-gray-300 md:w-11/12 xl:w-10/12">
       <Header />
-      <main className="my-10">{props.children}</main>
+      <main className="my-5">{props.children}</main>
       <Footer />
     </div>
   );

@@ -1,7 +1,7 @@
-enum SnsIconTypes {
+enum SnsTypes {
   twitter = "TWITTER",
   gitHub = "GITHUB",
   qiita = "QIITA",
 }
 
-export default SnsIconTypes;
+export default SnsTypes;

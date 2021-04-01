@@ -1,23 +1,23 @@
-import React from "react";
+import React, { VFC } from "react";
 import { Button } from "@material-ui/core";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import SearchIcon from "@material-ui/icons/Search";
-import SnsIconTypes from "../enums/SnsIconTypes";
+import SnsTypes from "../enums/SnsTypes";
 import Tooltip from "@material-ui/core/Tooltip";
 
-interface Props {
-  sns: SnsIconTypes;
+interface PROPS {
+  sns: SnsTypes;
   href: string;
   ariaLabel: string;
 }
 
-const SnsIconButton: React.FC<Props> = (props: Props) => {
+const SnsIconButton: VFC<PROPS> = (props) => {
   const { href, sns, ariaLabel } = props;
 
   const renderButton = () => {
     switch (sns) {
-      case SnsIconTypes.gitHub: {
+      case SnsTypes.gitHub: {
         return (
           <Tooltip title="GitHub">
             <Button
@@ -33,7 +33,7 @@ const SnsIconButton: React.FC<Props> = (props: Props) => {
           </Tooltip>
         );
       }
-      case SnsIconTypes.twitter: {
+      case SnsTypes.twitter: {
         return (
           <Tooltip title="Twitter">
             <Button
@@ -49,7 +49,7 @@ const SnsIconButton: React.FC<Props> = (props: Props) => {
           </Tooltip>
         );
       }
-      case SnsIconTypes.qiita: {
+      case SnsTypes.qiita: {
         return (
           <Tooltip title="Qiita">
             <Button

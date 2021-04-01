@@ -1,11 +1,59 @@
 import type { VFC } from "react";
 import Head from "next/head";
-import Image from "next/image";
 import Layout from "src/components/Layout";
-import Tags from "src/components/Tags";
-import ScheduleIcon from "@material-ui/icons/Schedule";
+import PortfolioItem from "src/components/PortfolioItem";
+import TechnologyTypes from "src/enums/TechnologyTypes";
 
-const workoutJournalTags = ["React", "Redux Toolkit", "Firebase", "Tailwind CSS"]
+const WORKOUT_JOURNAL = {
+  href: "https://moyong-front.web.app/",
+  src: "/workoutJournal.png",
+  name: "Workout Journal",
+  created_at: "2021/3",
+  tags: [
+    TechnologyTypes.react,
+    TechnologyTypes.reduxtoolkit,
+    TechnologyTypes.firebase,
+    TechnologyTypes.tailwindcss
+  ],
+  text: [
+    "日々の筋トレを記録できるアプリです。",
+    "主な機能としては、ログイン機能、投稿機能、コメント機能、GitHubカレンダー機能です。",
+    "構成は React / Redux Toolkit / Typescript / Firebase です。",
+    "UIはTailwind CSSとMaterial UIを使用しています。",
+  ],
+};
+const MY_PORTFOLIO = {
+  href: "https://myportfolio-html.vercel.app/",
+  src: "/myportfolio.png",
+  name: "My Portfolio",
+  created_at: "2020/12",
+  tags: [TechnologyTypes.html, TechnologyTypes.css, TechnologyTypes.javascript, TechnologyTypes.vercel],
+  text: [
+    "HTML、CSS、JavaScriptだけで作成した自己紹介用ホームページです。",
+    "YouTubeに転がっているHTML/CSSデザイン講座をひたすら写経していた時期があり、そのアウトプットとして作成しました。",
+    "ホスティングはVercelを利用しています。",
+  ],
+};
+const HOME_STUDY = {
+  href: "https://homsta.herokuapp.com/",
+  src: "/home-study.png",
+  name: "Home Study",
+  created_at: "2020/8",
+  tags: [
+    TechnologyTypes.rails,
+    TechnologyTypes.bootstrap,
+    TechnologyTypes.jquery,
+    TechnologyTypes.rspec,
+    TechnologyTypes.heroku,
+  ],
+  text: [
+    "自宅で勉強する人のためのコミュニティサイトのようなものを意識しました。",
+    "Twitterのようなつぶやき、いいね、フォロー、ユーザー編集などが行えます。",
+    "勉強開始にあわせて「勉強を開始」ボタンを押して頂きますと、「勉強している人一覧」ページにあなたの名前が表示されます。",
+    "そこで他の人から「エール」をもらったり、送ったりすることができます。",
+    "勉強にかけた時間を計測＆記録する機能もあります。",
+  ],
+};
 const Works: VFC = () => {
   return (
     <>
@@ -13,28 +61,10 @@ const Works: VFC = () => {
         <title>Portfolio | MO4g-DEV</title>
       </Head>
       <Layout>
-        <div className="flex mt-10 py-5 px-10 border shadow-md">
-          <div className="m-5">
-            <a href="https://moyong-front.web.app/">
-              <Image src="/workoutJournal.png" width={450} height={350} />
-            </a>
-          </div>
-          <div className="m-5">
-            <h1 className="my-3 text-2xl font-bold">Workout Journal</h1>
-            <p className="my-3 text-sm ">
-              <ScheduleIcon className="text-sm mx-1"/>
-              2021/3
-            </p>
-            <div className="flex my-3">
-              {workoutJournalTags.map((tag) => (
-                <Tags name={tag} />
-              ))}
-            </div>
-            <p className="my-3">日々の筋トレを記録できるアプリです。</p>
-            <p className="my-3">主な機能としては、ログイン機能、投稿機能、コメント機能、GitHubカレンダー機能です。</p>
-            <p className="my-3">構成は React / Redux Toolkit / Typescript / Firebase です。</p>
-            <p className="my-3">UIはTailwind CSSとMaterial UIを使用しています。</p>
-          </div>
+        <div className="flex flex-col justify-center items-center">
+          <PortfolioItem description={WORKOUT_JOURNAL}/>
+          <PortfolioItem description={MY_PORTFOLIO}/>
+          <PortfolioItem description={HOME_STUDY}/>
         </div>
       </Layout>
     </>

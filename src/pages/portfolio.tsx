@@ -24,7 +24,7 @@ const PORTFOLIO_ITEMS = [
     ],
   },
   {
-    href: "https://myportfolio-html.vercel.app/",
+    href: "https://moyong-portfolio.vercel.app/",
     src: "/myportfolio.png",
     name: "My Portfolio",
     created_at: "2020/12",
@@ -48,7 +48,7 @@ const PORTFOLIO_ITEMS = [
       TechnologyTypes.heroku,
     ],
     text: [
-      "自宅で勉強する人のためのコミュニティサイトのようなものを意識しました。",
+      "自宅で勉強する人のためのコミュニティサイトのようなものを意識して作りました。",
       "Twitterのようなつぶやき、いいね、フォロー、ユーザー編集などが行えます。",
       "勉強開始にあわせて「勉強を開始」ボタンを押して頂きますと、「勉強している人一覧」ページにあなたの名前が表示されます。",
       "勉強中、他の人から「エール」をもらったり、送ったりすることができます。",

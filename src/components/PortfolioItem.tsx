@@ -17,7 +17,7 @@ const PortfolioItem: VFC<PROPS> = (props) => {
   return (
     <div className="flex w-11/12 my-5 py-5 px-10 border shadow-md">
       <div className="w-2/5 m-5">
-        <a href={href}>
+        <a href={href} target="_blank" rel="noopener noreferrer">
           <Image src={src} width={450} height={270} />
         </a>
       </div>

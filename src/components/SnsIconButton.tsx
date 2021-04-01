@@ -25,7 +25,7 @@ const SnsIconButton: VFC<PROPS> = (props) => {
               variant="contained"
               href={href}
               target="_blank"
-              rel="noreferrer"
+              rel="noreferrer noopener"
               aria-label={ariaLabel}
             >
               <GitHubIcon />
@@ -41,7 +41,7 @@ const SnsIconButton: VFC<PROPS> = (props) => {
               variant="contained"
               href={href}
               target="_blank"
-              rel="noreferrer"
+              rel="noreferrer noopener"
               aria-label={ariaLabel}
             >
               <TwitterIcon />
@@ -57,7 +57,7 @@ const SnsIconButton: VFC<PROPS> = (props) => {
               variant="contained"
               href={href}
               target="_blank"
-              rel="noreferrer"
+              rel="noreferrer noopener"
               aria-label={ariaLabel}
             >
               <SearchIcon />

@@ -51,7 +51,7 @@ const Home: VFC = () => {
         <title>Home | MO4g-DEV</title>
       </Head>
       <div className="bg-white w-full flex flex-col justify-center items-center shadow-xl border-2 border-gray-300 md:w-11/12 xl:w-10/12">
-        <p className="mt-10 mb-5 text-black text-4xl font-bold tracking-wide cursor-pointer lg:text-5xl">
+        <p className="mt-10 mb-5 text-black text-4xl font-bold tracking-wide lg:text-5xl">
           {SITE_NAME_LITERAL.map((t, index) => (
             <span key={index} className={styles.hvrGrow}>
               {t}

@@ -25,8 +25,8 @@ const PortfolioItem: VFC<PROPS> = (props) => {
         <Image src={src} width={450} height={270} />
       </a>
       <div className="flex flex-col justify-center items-center m-5 xl:w-3/5 xl:justify-start xl:items-start">
-        <h1 className="text-lg xl:text-2xl font-bold">{name}</h1>
-        <p className="text-sm xl:mt-2">
+        <h1 className="text-lg text-black xl:text-2xl font-bold">{name}</h1>
+        <p className="text-sm text-black xl:mt-2">
           <ScheduleIcon className="text-sm mx-1" />
           {created_at}
         </p>
@@ -37,7 +37,7 @@ const PortfolioItem: VFC<PROPS> = (props) => {
         </div>
         <div className="mt-2 sm:w-4/5 md:2/3 xl:w-full">
           {text.map((row) => (
-            <p className="text-sm xl:text-base xl:my-1">{row}</p>
+            <p className="text-sm text-black xl:text-base xl:my-1">{row}</p>
           ))}
         </div>
       </div>

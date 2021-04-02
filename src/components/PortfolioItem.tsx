@@ -1,15 +1,15 @@
 import React, { VFC } from "react";
 import Image from "next/image";
-import Tags from "src/components/TechnologyTags";
+import TechTag from "src/components/TechTag";
 import ScheduleIcon from "@material-ui/icons/Schedule";
-import TechnologyTypes from "src/enums/TechnologyTypes";
+import TechTypes from "src/enums/TechTypes";
 
 interface PROPS {
   href: string,
   src: string,
   name: string,
   created_at: string,
-  tags: TechnologyTypes[],
+  tags: TechTypes[],
   text: string[],
 }
 const PortfolioItem: VFC<PROPS> = (props) => {
@@ -32,7 +32,7 @@ const PortfolioItem: VFC<PROPS> = (props) => {
         </p>
         <div className="flex mt-2">
           {tags.map((tag) => (
-            <Tags name={tag} />
+            <TechTag name={tag} />
           ))}
         </div>
         <div className="mt-2 sm:w-4/5 md:2/3 xl:w-full">

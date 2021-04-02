@@ -1,18 +1,18 @@
-enum TechnologyTypes {
+enum TechTypes {
   html = "HTML",
   css = "CSS",
   jquery = "jQuery",
   javascript = "JavaScript",
   react = "React",
-  reduxtoolkit = "Redux Toolkit",
-  nextjs = "Next.js",
+  toolkit = "Redux Toolkit",
+  next = "Next.js",
   rails = "Rails",
   firebase = "Firebase",
   rspec = "RSpec",
   heroku = "Heroku",
   bootstrap = "Bootstrap",
-  tailwindcss = "Tailwind CSS",
+  tailwind = "Tailwind CSS",
   vercel = "Vercel",
 }
 
-export default TechnologyTypes;
+export default TechTypes;

@@ -12,6 +12,7 @@ const PORTFOLIO_ITEMS = [
     created_at: "2021/3",
     tags: [
       TechTypes.next,
+      TechTypes.typescript,
       TechTypes.tailwind,
       TechTypes.vercel,
     ],

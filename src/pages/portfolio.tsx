@@ -12,8 +12,9 @@ const Works: VFC = () => {
       </Head>
       <Layout>
         <div className="flex flex-col justify-center items-center">
-          {PORTFOLIO_ITEMS.map((item) => {return (
+          {PORTFOLIO_ITEMS.map((item, index) => {return (
             <PortfolioItem
+              key={index}
               href={item.href}
               src={item.src}
               name={item.name}

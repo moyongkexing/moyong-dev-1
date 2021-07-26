@@ -32,13 +32,13 @@ const PortfolioItem: VFC<PROPS> = (props) => {
           {created_at}
         </p>
         <div className="flex mt-2">
-          {tags.map((tag) => {return (
-            <TechTag name={tag} />
+          {tags.map((tag, index) => {return (
+            <TechTag key={index} name={tag} />
           )})}
         </div>
         <div className="mt-2 sm:w-4/5 md:2/3 xl:w-full">
-          {text.map((row) => {return (
-            <p className="text-sm text-black xl:text-base xl:my-1">{row}</p>
+          {text.map((row, index) => {return (
+            <p key={index} className="text-sm text-black xl:text-base xl:my-1">{row}</p>
           )})}
         </div>
       </div>

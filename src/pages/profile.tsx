@@ -12,7 +12,6 @@ const Profile: VFC = () => {
       </Head>
       <Layout>
         <div className="w-full border-gray-300">
-          {/* <div className="flex justify-center">coming soon</div> */}
           <p className={styles.profile}>coming soon</p>
         </div>
       </Layout>

@@ -14,7 +14,8 @@ enum TechTypes {
   tailwind = "Tailwind CSS",
   vercel = "Vercel",
   typescript = "TypeScript",
-  responsive = "Responsive"
+  responsive = "Responsive",
+  api = "API",
 }
 
 export default TechTypes;

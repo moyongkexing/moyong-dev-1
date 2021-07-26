@@ -1,4 +1,5 @@
 import SnsIconTypes from "../enums/SnsTypes";
+
 const SNS_ICONS = [
   {
     name: SnsIconTypes.twitter,

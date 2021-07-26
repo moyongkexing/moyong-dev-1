@@ -1,4 +1,5 @@
-import React, { ReactNode, VFC } from "react";
+import type { ReactNode, VFC } from "react";
+import React from "react";
 import Footer from "src/components/Footer";
 import Header from "src/components/Header";
 

@@ -1,10 +1,12 @@
-import React, { VFC } from "react";
 import { Button } from "@material-ui/core";
-import GitHubIcon from "@material-ui/icons/GitHub";
-import TwitterIcon from "@material-ui/icons/Twitter";
-import SearchIcon from "@material-ui/icons/Search";
-import SnsTypes from "../enums/SnsTypes";
 import Tooltip from "@material-ui/core/Tooltip";
+import GitHubIcon from "@material-ui/icons/GitHub";
+import SearchIcon from "@material-ui/icons/Search";
+import TwitterIcon from "@material-ui/icons/Twitter";
+import type { VFC } from "react";
+import React from "react";
+
+import SnsTypes from "../enums/SnsTypes";
 
 interface PROPS {
   sns: SnsTypes;

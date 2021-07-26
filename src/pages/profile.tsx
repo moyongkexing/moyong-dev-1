@@ -1,7 +1,7 @@
-import type { VFC } from "react";
 import Head from "next/head";
-import Image from "next/image";
+import type { VFC } from "react";
 import Layout from "src/components/Layout";
+
 import styles from "../styles/brackets.module.css";
 
 const Profile: VFC = () => {

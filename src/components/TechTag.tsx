@@ -1,8 +1,8 @@
-import { VFC } from "react";
-import TechTypes from "src/enums/TechTypes";
+import type { VFC } from "react";
+import type TechTypes from "src/enums/TechTypes";
 
 interface PROPS {
-  name: string;
+  name: TechTypes;
 }
 
 const TechTag: VFC<PROPS> = (props) => {

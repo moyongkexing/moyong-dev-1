@@ -1,5 +1,5 @@
-import type { VFC } from "react";
 import Link from "next/link";
+import type { VFC } from "react";
 
 const Footer: VFC = () => {
   return (

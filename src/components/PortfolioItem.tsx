@@ -1,8 +1,9 @@
-import React, { VFC } from "react";
-import Image from "next/image";
-import TechTag from "src/components/TechTag";
 import ScheduleIcon from "@material-ui/icons/Schedule";
-import TechTypes from "src/enums/TechTypes";
+import Image from "next/image";
+import type { VFC } from "react";
+import React from "react";
+import TechTag from "src/components/TechTag";
+import type TechTypes from "src/enums/TechTypes";
 
 interface PROPS {
   href: string,
@@ -31,14 +32,14 @@ const PortfolioItem: VFC<PROPS> = (props) => {
           {created_at}
         </p>
         <div className="flex mt-2">
-          {tags.map((tag) => (
+          {tags.map((tag) => {return (
             <TechTag name={tag} />
-          ))}
+          )})}
         </div>
         <div className="mt-2 sm:w-4/5 md:2/3 xl:w-full">
-          {text.map((row) => (
+          {text.map((row) => {return (
             <p className="text-sm text-black xl:text-base xl:my-1">{row}</p>
-          ))}
+          )})}
         </div>
       </div>
     </div>

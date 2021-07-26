@@ -1,6 +1,8 @@
-import React, { VFC } from "react";
-import Link, { LinkProps } from "next/link";
 import Image from "next/image";
+import type { LinkProps } from "next/link";
+import Link from "next/link";
+import type { VFC } from "react";
+import React from "react";
 
 interface PROPS {
   linkProps: LinkProps;

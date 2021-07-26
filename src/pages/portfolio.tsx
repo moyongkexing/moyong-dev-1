@@ -1,8 +1,9 @@
-import type { VFC } from "react";
 import Head from "next/head";
+import type { VFC } from "react";
 import Layout from "src/components/Layout";
 import PortfolioItem from "src/components/PortfolioItem";
 import PORTFOLIO_ITEMS from "src/variables/portfolioItems";
+
 const Works: VFC = () => {
   return (
     <>
@@ -11,7 +12,7 @@ const Works: VFC = () => {
       </Head>
       <Layout>
         <div className="flex flex-col justify-center items-center">
-          {PORTFOLIO_ITEMS.map((item) => (
+          {PORTFOLIO_ITEMS.map((item) => {return (
             <PortfolioItem
               href={item.href}
               src={item.src}
@@ -20,7 +21,7 @@ const Works: VFC = () => {
               tags={item.tags}
               text={item.text}
             />
-          ))}
+          )})}
         </div>
       </Layout>
     </>

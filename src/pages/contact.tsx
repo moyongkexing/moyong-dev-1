@@ -1,5 +1,5 @@
-import type { VFC } from "react";
 import Head from "next/head";
+import type { VFC } from "react";
 import Layout from "src/components/Layout";
 
 const Contact: VFC = () => {

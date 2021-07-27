@@ -3,6 +3,7 @@ import TechTypes from "src/enums/TechTypes";
 const PORTFOLIO_ITEMS = [
   {
     href: "https://blackjack-game-oop.vercel.app/",
+    git: "https://github.com/moyongkexing/blackjack-game-oop",
     src: "/blackjack.png",
     name: "Black Jack Game",
     created_at: "2021/6",
@@ -14,6 +15,7 @@ const PORTFOLIO_ITEMS = [
   },
   {
     href: "https://computer-builder.vercel.app/",
+    git: "https://github.com/moyongkexing/computer-builder",
     src: "/computer-builder.png",
     name: "Computer Builder",
     created_at: "2021/5",
@@ -26,12 +28,13 @@ const PORTFOLIO_ITEMS = [
   },
   {
     href: "https://clicker-empire-game.vercel.app/",
+    git: "https://github.com/moyongkexing/clicker-empire-game",
     src: "/clicker-empire-game.png",
     name: "Clicker Empire Game",
     created_at: "2021/5",
     tags: [TechTypes.javascript, TechTypes.tailwind, TechTypes.vercel],
     text: [
-      "オンライン学習プラットフォーム RecursionCS での課題作品です。ハンバーガーをクリックしてお金を貯め、億万長者を目指すゲームです。一応、「有り金をひたすら株式に突っ込む」という戦略があります。",
+      "オンライン学習プラットフォーム RecursionCS での課題作品です。ハンバーガーをクリックしてお金を貯め、億万長者を目指すゲームです。一応、「有り金をひたすら株式につっこむ」という戦略があります。",
       "アイテム仕様は教材内で提示されたものに沿っていますが、実装は完全自力です。",
       "半分は関数型(?)、半分はオブジェクト指向で書きました。100%オブジェクト指向で作りたかったですが良いロジックが思いつかず...。",
       "直感的な命名や、メソッドの粒度を小さくすること、関数をネストさせて可読性をあげることにこだわりました。",
@@ -39,6 +42,7 @@ const PORTFOLIO_ITEMS = [
   },
   {
     href: "",
+    git: "https://github.com/moyongkexing/moyong-dev",
     src: "/moyong-dev.png",
     name: "MO4g-DEV",
     created_at: "2021/3",
@@ -51,6 +55,7 @@ const PORTFOLIO_ITEMS = [
   },
   {
     href: "https://moyong-front.web.app/",
+    git: "https://github.com/moyongkexing/workout-journal",
     src: "/workoutJournal.png",
     name: "Workout Journal",
     created_at: "2021/3",
@@ -64,6 +69,7 @@ const PORTFOLIO_ITEMS = [
   },
   {
     href: "https://moyong-portfolio.vercel.app/",
+    git: "https://github.com/moyongkexing/my-portfolio",
     src: "/myportfolio.png",
     name: "My Portfolio",
     created_at: "2020/12",
@@ -76,10 +82,18 @@ const PORTFOLIO_ITEMS = [
   },
   {
     href: "https://homsta.herokuapp.com/",
+    git: "https://github.com/moyongkexing/home-study",
     src: "/home-study.png",
     name: "Home Study",
     created_at: "2020/8",
-    tags: [TechTypes.rails, TechTypes.bootstrap, TechTypes.jquery, TechTypes.rspec, TechTypes.heroku],
+    tags: [
+      TechTypes.rails,
+      TechTypes.bootstrap,
+      TechTypes.jquery,
+      TechTypes.postgresql,
+      TechTypes.rspec,
+      TechTypes.heroku,
+    ],
     text: [
       "勉強はじめたての頃に、スクール講師の方の力とフレームワークの魔法をひたすら頼ってなんとか形にしたwebアプリです。",
       "機能としてはTwitterのようなつぶやき投稿機能、いいね、コメント、フォローなどが行えます。",

@@ -16,6 +16,7 @@ const Works: VFC = () => {
             <PortfolioItem
               key={index}
               href={item.href}
+              git={item.git}
               src={item.src}
               name={item.name}
               created_at={item.created_at}

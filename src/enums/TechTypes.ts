@@ -3,6 +3,8 @@ enum TechTypes {
   css = "CSS",
   jquery = "jQuery",
   javascript = "JavaScript",
+  ruby = "Ruby",
+  postgresql = "PostgreSQL",
   react = "React",
   toolkit = "Redux Toolkit",
   next = "Next.js",

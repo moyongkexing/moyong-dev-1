@@ -20,45 +20,51 @@ const Home: VFC = () => {
       </Head>
       <div className="bg-white w-full flex flex-col justify-center items-center shadow-xl border-2 border-gray-300 md:w-11/12 xl:w-10/12">
         <p className="mt-10 mb-5 text-black text-4xl font-bold tracking-wide lg:text-5xl">
-          {SITE_NAME_LITERAL.map((t, index) => {return (
-            <span key={index} className={styles.hvrGrow}>
-              {t}
-            </span>
-          )})}
+          {SITE_NAME_LITERAL.map((t, index) => {
+            return (
+              <span key={index} className={styles.hvrGrow}>
+                {t}
+              </span>
+            );
+          })}
         </p>
 
         <div className="w-full pb-5 flex flex-col items-center sm:flex-row sm:pb-10 sm:justify-center border-b border-gray-300">
-          {HOME_CONTENT_ITEMS.map((item) => {return (
-            <HomeContent
-              key={item.name}
-              linkProps={{ href: item.href }}
-              imgProps={{
-                src: item.src,
-                alt: item.name,
-                width: 109,
-                height: 120,
-              }}
-              name={item.name}
-            />
-          )})}
+          {HOME_CONTENT_ITEMS.map((item) => {
+            return (
+              <HomeContent
+                key={item.name}
+                linkProps={{ href: item.href }}
+                imgProps={{
+                  src: item.src,
+                  alt: item.name,
+                  width: 109,
+                  height: 120,
+                }}
+                name={item.name}
+              />
+            );
+          })}
         </div>
 
         <div className="w-full py-5 flex flex-col items-center md:flex-row md:justify-around">
           <div className="my-4 md:border-r border-gray-300 sm:w-7/12">
             <div className="flex flex-col items-center">
               <p className="text-3xl text-black font-bold mt-1 md:text-4xl lg:text-5xl tracking-wider">
-                {MY_NAME_LITERAL.map((t, index) => {return (
-                  <span key={index} className={styles.hvrGrow}>
-                    {t}
-                  </span>
-                )})}
+                {MY_NAME_LITERAL.map((t, index) => {
+                  return (
+                    <span key={index} className={styles.hvrGrow}>
+                      {t}
+                    </span>
+                  );
+                })}
               </p>
-              <p className="text-black font-bold mt-1 md:text-lg">I'm not a Web Developer yet.</p>
+              <p className="text-black font-bold mt-1 md:text-lg">I&apos;m not a Web Developer yet.</p>
             </div>
             <div className="flex justify-center my-2 sm:my-4">
-              {SNS_ICONS.map((sns) => {return (
-                <SnsIconButton key={sns.name} sns={sns.name} href={sns.href} ariaLabel={sns.label} />
-              )})}
+              {SNS_ICONS.map((sns) => {
+                return <SnsIconButton key={sns.name} sns={sns.name} href={sns.href} ariaLabel={sns.label} />;
+              })}
             </div>
           </div>
 
